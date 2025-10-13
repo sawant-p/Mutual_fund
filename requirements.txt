@@ -8,4 +8,5 @@ openpyxl
 beautifulsoup4
 textblob
 deprecated
+lxml
 
