@@ -6,4 +6,5 @@ plotly
 requests
 beautifulsoup4
 textblob
+deprecated
 mftool
