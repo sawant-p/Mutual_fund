@@ -2,9 +2,10 @@ streamlit
 pandas
 numpy
 scikit-learn
-plotly
+mftool
 requests
+openpyxl
 beautifulsoup4
 textblob
 deprecated
-mftool
+
