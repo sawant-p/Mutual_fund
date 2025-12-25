@@ -6,7 +6,8 @@ import os
 
 API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyCFGKXUPAfTKA97PURI4agLQI7pC4YpMLU")
 
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent"
+GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent"
+
 
 def call_gemini_api_with_retry(payload, max_retries=3):
     """Handles API call with exponential backoff for resilience."""
@@ -85,4 +86,5 @@ def call_gemini_api_for_suggestions(predicted_1y, debt_per, equity_per, rating):
             if attr.get('web') and attr['web'].get('uri') and attr['web'].get('title')
         ]
         
+
     return {"text": text, "sources": sources}
