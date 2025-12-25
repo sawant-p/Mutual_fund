@@ -9,4 +9,6 @@ beautifulsoup4
 textblob
 deprecated
 lxml
+plotly
+
 
